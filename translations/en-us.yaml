@@ -27,6 +27,7 @@ registry-bridge:
     publish: Publish
     about: About
     about-extension: About {extensionName}
+    uploading: "Uploading..."
   component:
     registry-admin-config:
       title: "Registry Configuration"

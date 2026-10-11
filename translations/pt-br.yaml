@@ -9,6 +9,7 @@ registry-bridge:
     publish: Publicar
     about: Sobre
     about-extension: Sobre {extensionName}
+    uploading: "Enviando..."
   component:
     extension-details-modal:
       extension: Extensão
