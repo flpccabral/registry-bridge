@@ -1,5 +1,23 @@
 registry-bridge:
   extension-name: Registry Bridge
+  extension:
+    title: "Extensions"
+    description: "Discover, install, and publish extensions to the Fleetbase extension registry."
+    shortcuts:
+      explore:
+        title: "Explore"
+        description: "Browse and discover extensions available in the registry."
+      installed:
+        title: "Installed"
+        description: "View and manage extensions currently installed in your console."
+      purchased:
+        title: "Purchased"
+        description: "Access extensions you have purchased from the registry."
+    admin:
+      panel-title: "Extensions Registry"
+      registry-config: "Registry Config"
+      awaiting-review: "Awaiting Review"
+      pending-publish: "Pending Publish"
   common:
     install: Install
     uninstall: Uninstall
@@ -10,6 +28,10 @@ registry-bridge:
     about: About
     about-extension: About {extensionName}
   component:
+    registry-admin-config:
+      title: "Registry Configuration"
+      registry-host: "Registry Host"
+      registry-token: "Registry Token"
     extension-details-modal:
       extension: Extension
       author: Author

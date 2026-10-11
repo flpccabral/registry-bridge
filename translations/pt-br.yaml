@@ -1,0 +1,168 @@
+registry-bridge:
+  extension-name: Registry Bridge
+  common:
+    install: Instalar
+    uninstall: Desinstalar
+    approve: Aprovar
+    reject: Rejeitar
+    details: Detalhes
+    publish: Publicar
+    about: Sobre
+    about-extension: Sobre {extensionName}
+  component:
+    extension-details-modal:
+      extension: Extensão
+      author: Autor
+      description: Descrição
+      overview: Visão geral
+      details: Detalhes
+      version: Versão
+      updated: Atualizada
+      website: Site
+      self-managed: Autogerenciada
+      self-managed-help-text: Uma extensão autogerenciada é destinada a usuários que hospedam a Fleetbase em seus próprios servidores, fora do ambiente de nuvem/SaaS. Essas extensões exigem instalação e configuração manuais. Se você usa uma instância auto-hospedada da Fleetbase, pode usar essas extensões para adicionar recursos. No entanto, elas não estão disponíveis para usuários de nuvem/SaaS.
+      self-hosted-install: Instalação auto-hospedada
+      self-hosted-install-help-text: Ver instruções de instalação auto-hospedada.
+    extension-pending-publish-viewer:
+      content-panel-title: Extensões com publicação pendente
+      focused-extension-title: 'Detalhes de {extensionName}
+
+        '
+      download-bundle: Baixar pacote
+      view-details: Ver detalhes
+      publish: Publicar
+      no-extensions-awaiting-publish: Nenhuma extensão aguardando publicação
+    extension-reviewer-control:
+      content-panel-title: Extensões aguardando revisão
+      focused-extension-title: 'Detalhes de {extensionName}
+
+        '
+      approve-confirm-title: Tem certeza de que deseja aprovar esta extensão?
+      approve-confirm-body: Esta extensão deve ser testada a fundo em ambientes de desenvolvimento e de teste, incluindo conformidade e segurança. Depois de aprovada, a extensão precisará ser publicada manualmente no registro.
+      decline-confirm-title: Tem certeza de que deseja rejeitar esta extensão?
+      decline-confirm-body: Esta extensão será rejeitada, mas o autor terá a chance de fazer correções e reenviá-la para revisão.
+      download-bundle: Baixar pacote
+      view-details: Ver detalhes
+      approve: Aprovar
+      reject: Rejeitar
+      no-extensions-awaiting-review: Nenhuma extensão aguardando revisão
+    registry-admin-config:
+      title: Configuração do registro
+      registry-host: Host do registro
+      registry-token: Token do registro
+  installed:
+    title: Extensões instaladas
+  purchased:
+    title: Extensões compradas
+  developers:
+    payments:
+      manage-account: Gerenciar conta de recebimentos
+      no-account-warning: Você precisa concluir o cadastro no Stripe antes de acessar as configurações da conta.
+      settings:
+        title: Gerenciar conta de recebimentos
+        description: Gerencie os dados da sua conta Stripe, incluindo as informações da empresa e as contas bancárias para receber pagamentos.
+        loading: Carregando o gerenciamento da conta...
+    extensions:
+      extensions: Extensões
+      create-new-extension: Criar nova extensão
+      new-extension: Nova extensão
+      extension: Extensão
+      submission: Envio
+      details: Detalhes
+      bundles: Pacotes
+      monetize: Monetizar
+      explore:
+        explore-extensions: Explorar extensões
+        explore-category-extensions: 'Extensões de {categoryName}
+
+          '
+      extension-form:
+        package-name: Nome do pacote
+        package-json-name: Nome no package.json
+        composer-json-name: Nome no composer.json
+        submission-success-message: Extensão enviada e aguardando revisão.
+        extension-category: Categoria
+        extension-category-help-text: Selecione a categoria em que os usuários poderão encontrar sua extensão.
+        extension-select-category: Selecione a categoria
+        extension-name: Nome da extensão
+        extension-icon: Ícone da extensão
+        upload-extension-icon: Enviar ícone
+        extension-description: Descrição
+        extension-tags: Tags
+        extension-add-tags: Adicione palavras-chave e tags
+        extension-promotional-text: Texto promocional
+        details-content-block: Detalhes da extensão
+        extension-listing-details: Detalhes da listagem
+        extension-subtitle: Subtítulo
+        extension-website-url: URL do site
+        extension-repo-url: URL do repositório
+        extension-support-url: URL de suporte
+        extension-privacy-policy-url: URL da política de privacidade
+        extension-tos-url: URL dos termos de serviço
+        extension-primary-language: Idioma principal
+        extension-version: Versão
+        extension-copyright: Direitos autorais
+        extension-copyright-help-text: Informe o aviso de direitos autorais da sua extensão. Normalmente inclui o ano e o nome do titular ou da empresa.
+        extension-payment-required: Pagamento obrigatório
+        extension-payment-required-help-text: Define se é necessário pagamento ou assinatura para que os usuários instalem esta extensão.
+        extension-price: Preço
+        extension-price-help-text: Informe o preço normal da extensão. Este é o custo padrão para os usuários comprarem ou acessarem a extensão.
+        extension-sale-price: Preço promocional
+        extension-sale-price-help-text: Se a extensão estiver sendo oferecida com desconto, informe aqui o preço promocional. Ele deve ser menor que o preço normal.
+        extension-subscription-required: Assinatura obrigatória
+        extension-subscription-required-help-text: Define se o usuário precisa ter uma assinatura para instalar e usar esta extensão.
+        extension-subscription-billing-period: Período de cobrança da assinatura
+        extension-subscription-billing-period-placeholder: Selecione o período de cobrança
+        extension-subscription-billing-period-help-text: 'Informe o período de cobrança da assinatura. Por exemplo: mensal, trimestral, anual ou outros intervalos personalizados.'
+        extension-subscription-amount: Valor da assinatura
+        extension-subscription-amount-help-text: Informe o valor padrão a ser cobrado pela assinatura. Ele deve refletir o preço normal antes de descontos ou ajustes por faixas.
+        extension-subscription-model: Modelo de assinatura
+        extension-subscription-model-help-text: Define o modelo de preço da assinatura. As opções incluem taxa fixa, por faixas e baseada no uso.
+        extension-subscription-tiers: Faixas da assinatura
+        extension-subscription-tiers-help-text: Defina as diferentes faixas de preço da assinatura, se houver. Inclua detalhes como os níveis, o preço de cada faixa e os recursos ou limitações de cada uma.
+        extension-name-help-text: Informe o nome oficial da extensão. Ele será exibido como o identificador principal para os usuários.
+        extension-icon-help-text: Envie um ícone que represente a extensão. Ele será usado nas listagens e nos resultados de busca.
+        extension-description-help-text: Descreva em detalhes o que a extensão faz e seus principais recursos. Essas informações ajudam os usuários a entender a funcionalidade da extensão.
+        extension-tags-help-text: Adicione palavras-chave e tags relevantes que descrevam a extensão, ajudando os usuários a encontrá-la pela busca.
+        extension-promotional-text-help-text: Escreva um texto promocional que destaque os diferenciais da extensão. Ele será usado em seções de marketing ou destaque.
+        extension-subtitle-help-text: Informe um breve subtítulo com contexto ou informações adicionais sobre a extensão.
+        extension-website-url-help-text: Informe a URL do site oficial ou da página do produto da extensão para mais informações.
+        extension-repo-url-help-text: Informe a URL do repositório de código da extensão (por exemplo, GitHub ou GitLab), se houver.
+        extension-support-url-help-text: Informe a URL onde os usuários podem obter suporte, tirar dúvidas ou relatar problemas com a extensão.
+        extension-privacy-policy-url-help-text: Link para a política de privacidade que descreve como os dados dos usuários são tratados e protegidos.
+        extension-tos-url-help-text: Link para os termos de serviço que os usuários devem aceitar antes de usar a extensão.
+        extension-primary-language-help-text: Informe o idioma principal em que a extensão foi desenvolvida ou está disponível.
+        extension-version-help-text: Indique a versão atual da extensão. Isso é importante para acompanhar atualizações e compatibilidade.
+        extension-payment-details: Detalhes do pagamento
+        extension-screenshots: Capturas de tela
+        upload-screenshots: Enviar capturas de tela
+        submit-for-review: Enviar para revisão
+        extension-bundle: Pacote da extensão
+        extension-upload-bundle: Enviar pacote da extensão
+        details: Detalhes
+        bundle-id: ID do pacote
+        bundle-id-help-text: O identificador do pacote publicado atualmente.
+        extension-id: ID da extensão
+        extension-id-help-text: O identificador único desta extensão.
+        bundles: Pacotes
+        upload-new-bundle: Enviar novo pacote
+        self-managed: Autogerenciada
+        self-managed-help-text: Ative esta opção se o seu módulo for destinado apenas a instâncias auto-hospedadas. Com isso, o módulo não ficará disponível para instalação na versão de nuvem/SaaS da Fleetbase e precisará ser instalado manualmente pelo usuário no próprio servidor.
+  extension:
+    title: Extensões
+    description: Descubra, instale e publique extensões no registro de extensões da Fleetbase.
+    shortcuts:
+      explore:
+        title: Explorar
+        description: Navegue e descubra as extensões disponíveis no registro.
+      installed:
+        title: Instaladas
+        description: Veja e gerencie as extensões instaladas no seu console.
+      purchased:
+        title: Compradas
+        description: Acesse as extensões que você comprou no registro.
+    admin:
+      panel-title: Registro de extensões
+      registry-config: Configuração do registro
+      awaiting-review: Aguardando revisão
+      pending-publish: Publicação pendente
